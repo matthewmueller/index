@@ -5,7 +5,13 @@
 
 ## Example
 
+```js
+var index = Index(['apple', 'orange', 'pear']);
 
+index.search('ang') // true
+index.search('pp') // true
+index.search('ppp') // false
+```
 
 ## Installation
 
