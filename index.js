@@ -43,7 +43,7 @@ Index.prototype.add = function(arr) {
  */
 
 Index.prototype.search = function(str) {
-  str = str.toLowerCase();
+  str = str.replace(/\s/g, '').toLowerCase();
   if(~this.index.indexOf(str)) return true;
   return false;
 };
