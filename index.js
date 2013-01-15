@@ -12,7 +12,7 @@ module.exports = Index;
  */
 
 function Index(arr) {
-  if(!(this instanceof Index)) return new Index;
+  if(!(this instanceof Index)) return new Index(arr);
   this.index = '';
   if(arr) this.add(arr);
 }
@@ -43,6 +43,7 @@ Index.prototype.add = function(arr) {
  */
 
 Index.prototype.search = function(str) {
+  str = str.toLowerCase();
   if(~this.index.indexOf(str)) return true;
   return false;
 };

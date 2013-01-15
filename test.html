@@ -24,10 +24,8 @@
   <script src="../build/build.js" type="text/javascript"></script>
   <script type="text/javascript">
     var Index = require('index'),
-        index = Index(),
         fruits = fruit.innerText.trim().split('\n')
-
-    index.add(fruits);
+        index = Index(fruits);
 
     search.oninput = function(e) {
       var q = e.target.value;
