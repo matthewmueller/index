@@ -2,7 +2,7 @@
   "name": "index",
   "repo": "matthewmueller/index",
   "description": "simple indexing of strings for basic fuzzy search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["search", "index", "query"],
   "dependencies": {},
   "development": {},
