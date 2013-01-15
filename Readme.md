@@ -21,7 +21,7 @@ index.search('ppp') // false
 
 ### Index([words])
 
-Initialize an `Index`, with an optional `words`.
+Initialize an `Index`, with an optional `words` array.
 
 ### index.add(words)
 

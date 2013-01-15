@@ -26,8 +26,8 @@ function Index(arr) {
  */
 
 Index.prototype.add = function(arr) {
-  var index = [];
   arr = (typeof arr == 'string') ? [ arr ] : arr;
+  var index = [];
   for (var i = 0, len = arr.length; i < len; i++)
     index[index.length] = arr[i].toLowerCase();
   this.index += index.join('');
