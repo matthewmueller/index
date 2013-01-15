@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Index component</title>
+</head>
+<body>
+  <h1>Index component</h1>
+
+  <h2>Perform a fuzzy search on the fruit</h2>
+
+  <ul id="fruit">
+    <li>Apple</li>
+    <li>Pear</li>
+    <li>Orange</li>
+    <li>Grape</li>
+    <li>Plum</li>
+    <li>Peach</li>
+    <li>Watermelon</li>
+  </ul>
+
+  <input id="search" type="text" placeholder="search for a fruit" autocomplete="off"><br><br>
+
+  Result: <span id="result"></span>
+
+  <script src="../build/build.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var Index = require('index'),
+        index = Index(),
+        fruits = fruit.innerText.trim().split('\n')
+
+    index.add(fruits);
+
+    search.oninput = function(e) {
+      var q = e.target.value;
+      if(!q) return;
+      var res = index.search(q);
+      result.innerHTML = res;
+    }
+
+  </script>
+</body>
+</html>
